@@ -4573,7 +4573,7 @@ function afRenderMarkdown(md) {
 
 // ========== 大模型AI优化建议(返回Promise版本,供分析流程调用) ==========
 function afGenerateAISuggestionsWithPromise(currentSummary) {
-  // API Key 由 Cloudflare Worker 管理
+  // API Key 由 Cloudflare  管理
   var retryCount = 0;
   var maxRetries = 3;
 
@@ -4680,7 +4680,7 @@ prompt += '## 任务二:优化建议\n';
   console.log('===== AI Prompt 结束 =====');
 
   function callAPI() {
-    return fetch('https://autumn-king-b62a.zjy1529439303.workers.dev', {
+    return fetch('https://ai-analyse-api-uxiouslahf.cn-hangzhou.fcapp.run', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
