@@ -2551,7 +2551,7 @@ function sendReportRequest(funnelImage, fileName) {
     resultEval: !!afReportData.resultEval
   });
 
-  fetch('https://zjy123123.pythonanywhere.com/api/generate-report', {
+  fetch('https://backendrt-proxy-mflfvzrral.cn-hangzhou.fcapp.run', {
     method: 'POST',
     headers: {'Content-Type': 'application/json'},
     body: JSON.stringify(requestBody)
