@@ -719,7 +719,6 @@
       var sugEl = document.getElementById('db-suggestions');
       if (!sugEl) return;
 
-      var apiKey = 'sk-ivjlWx1Lu30uLBeGVFRvcCvpcXfV1fA5D9VlkMcX7qaHRgFD';
       var retryCount = 0;
       var maxRetries = 3;
 
@@ -728,8 +727,6 @@
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
-            'X-Api-Key': apiKey,
-            'anthropic-version': '2023-06-01'
           },
           body: JSON.stringify({
             model: 'deepseek-v4-flash',
